@@ -30,7 +30,7 @@ To get started with the project:
 
 1. **Clone the Repository:**
     ```sh
-    git clone https://github.com/bendosh4/python-project.git
+    git clone https://github.com/bendosh4/Demon.git
     ```
 
 2. **Navigate to the Project Directory:**
