@@ -1,5 +1,4 @@
 # Demon
-# Python Project
 
 ## Description
 
