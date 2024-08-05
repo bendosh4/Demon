@@ -4,7 +4,7 @@ import sys
 from datetime import datetime
 import threading
 import colors
-import Demon
+import logo
 
 
 
@@ -12,7 +12,7 @@ def scan():
     # Clear screen
     subprocess.call('clear', shell=True)
 
-    Demon.print_logo()
+    logo.print_logo()
     remoteServer = input("Enter a remote server: ")
     remoteServerIP = socket.gethostbyname(remoteServer)
     print(f"{colors.COLORS['cyan']}IP address of {remoteServer}: {remoteServerIP}{colors.RESET}")

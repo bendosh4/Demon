@@ -36,30 +36,3 @@ STYLES = {
     "reverse": "\033[7m",
     "hidden": "\033[8m",
 }
-
-def print_colored_text():
-    # Display all text colors
-    print("Text Colors:")
-    for color_name, color_code in COLORS.items():
-        print(f"{color_code}{color_name.capitalize()}{RESET}")
-
-    # Display all background colors
-    print("\nBackground Colors:")
-    for color_name, bg_color_code in BG_COLORS.items():
-        print(f"{bg_color_code} {color_name.capitalize()} {RESET}")
-
-    # Display all styles
-    print("\nStyles:")
-    for style_name, style_code in STYLES.items():
-        print(f"{style_code}{style_name.capitalize()}{RESET}")
-
-    # Combine text colors, background colors, and styles
-    print("\nCombined Text Colors, Background Colors, and Styles:")
-    for text_color_name, text_color_code in COLORS.items():
-        for bg_color_name, bg_color_code in BG_COLORS.items():
-            for style_name, style_code in STYLES.items():
-                combined_text = f"{style_code}{text_color_code}{bg_color_code} {style_name.capitalize()} {text_color_name.capitalize()} on {bg_color_name.capitalize()} {RESET}"
-                print(combined_text)
-
-if __name__ == "__main__":
-    print_colored_text()

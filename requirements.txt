@@ -2,3 +2,4 @@ cryptography
 scapy
 requests
 numpy
+keyboard
