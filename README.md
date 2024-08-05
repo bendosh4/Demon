@@ -55,7 +55,10 @@ To get started with the project:
       ```
 
 4. **Run the Application:**
-    - Follow the instructions provided in the documentation or comments within the code to use the encryption, port scanning, and file management features.
+    - To run the application, execute the `Demon.py` script:
+      ```sh
+      python Demon.py
+      ```
 
 ## Contributing
 
