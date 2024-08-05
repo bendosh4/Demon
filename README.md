@@ -22,7 +22,6 @@ This Python project consists of three major components: encryption with a random
 ## Technologies Used
 
 - **Python:** For implementing encryption algorithms, port scanning, and file management functionalities.
-- **[Any Libraries or Tools Used]:** List any libraries or tools used, such as `cryptography` for encryption or `scapy` for network scanning.
 
 ## Getting Started
 
