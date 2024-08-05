@@ -1,5 +1,14 @@
-cryptography
-scapy
-requests
-numpy
+# requirements.txt
+
+# Libraries
+random
+datetime
+threading
+subprocess
 keyboard
+
+# Custom Modules (these are files you created, so they don't need to be listed in requirements.txt)
+# colors
+# port_scanner
+# logo
+# extra
