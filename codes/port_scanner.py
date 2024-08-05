@@ -11,10 +11,15 @@ import logo
 def scan():
     # Clear screen
     subprocess.call('clear', shell=True)
-
+    remoteServer = ""
+    remoteServerIP = ""
     logo.print_logo()
-    remoteServer = input("Enter a remote server: ")
-    remoteServerIP = socket.gethostbyname(remoteServer)
+    try:
+        remoteServer = input("Enter a remote server: ")
+        remoteServerIP = socket.gethostbyname(remoteServer)
+    except socket.gaierror:
+        print(f"{colors.COLORS['red']}Invalid hostname. Please try again.{colors.RESET}")
+        sys.exit(1)
     print(f"{colors.COLORS['cyan']}IP address of {remoteServer}: {remoteServerIP}{colors.RESET}")
 
     print(f"{colors.COLORS['yellow']}----------------------------------------------------{colors.RESET}")

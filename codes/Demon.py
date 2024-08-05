@@ -6,9 +6,10 @@ import logo
 import extra
 import threading  
 import subprocess
+import fileEncrypter
 
 def pront_cmd():
-    commends = ['port scanning', 'network discovery', 'vulnerability scanning', 'pen test', 'exploit development']
+    commends = ['port scanning', 'clear', 'help', 'last', 'time', 'encryption', 'decryption', 'exit', 'read']
     for c in commends:
         print(f"{colors.COLORS['cyan']}{c}{colors.RESET}")
         
@@ -36,12 +37,15 @@ while msg != "exit":
     elif msg == "port scanning":
         port_scanner.scan()
     elif msg == "time":
-        current_time = datetime.now().strftime("%H:%M:%S")
+        current_time = datetime.datetime.now().strftime("%H:%M:%S")
         print(f"{colors.COLORS['magenta']}The current time is {current_time}{colors.RESET}")
-    elif msg == "color":
-        random_color = random.choice(list(colors.COLORS.values()))
-        print(f"{random_color}Random color selected{colors.RESET}")
+    elif msg == "encryption":
+        fileEncrypter.encrypt()
+    elif msg == "decryption":
+        fileEncrypter.decrypt()
+    elif msg == 'read':
+        fileEncrypter.read()
     elif msg == "exit":
         print(f"{colors.COLORS['green']}Goodbye, Demon!{colors.RESET}")
     else:
-        print(f"{colors.COLORS['red']}Invalid command. Type 'help' for available commands.{colors.RESET}")
+        extra.wrong_commend(msg)

@@ -3,10 +3,9 @@ import colors
 
 last_typed_commend = []
 
-def arrow_keys_pressed(last_pressed_cmd: list) -> bool:
-    while True:
-        if keyboard.is_pressed('-'):
-            print(f"{colors.COLORS['yellow']}Previous command: {last_pressed_cmd[-1]}{colors.RESET}")
-                        
-
-
+def wrong_commend(commend):
+    #print(f"{commend} is not a valid command. Type 'help' for available commands.")
+    if 'port' in commend or 'scanning' in commend:
+        print(f"{colors.COLORS['red']}{commend} Did you mean 'port scanning'?{colors.RESET}")
+    else:
+        print(f"{colors.COLORS['red']}Invalid command. Type 'help' for available commands.{colors.RESET}")
