@@ -1,5 +1,6 @@
 # Demon
-
+## Documentation
+**Make sure to check the documentation for more info [documentation](https://bendosh4.github.io/Demon-Website/)
 ## Description
 
 **Demon** is a Python project that consists of three major components: encryption with a random key, port scanning, and file management. This project demonstrates various techniques in Python, including cryptography, network scanning, and file handling.
