@@ -22,6 +22,16 @@ This Python project consists of three major components: encryption with a random
 ## Technologies Used
 
 - **Python:** For implementing encryption algorithms, port scanning, and file management functionalities.
+- **Libraries Used:**
+  - `colors`: A custom file for ASCII colors.
+  - `random`: For generating random keys.
+  - `port_scanner`: A custom file for port scanning functionality.
+  - `datetime`: For handling date and time operations.
+  - `logo`: A custom file for displaying logos.
+  - `extra`: A custom file for additional functionalities.
+  - `threading`: For concurrent execution.
+  - `subprocess`: For executing shell commands.
+  - `keyboard`: For keyboard event handling.
 
 ## Getting Started
 
@@ -29,12 +39,12 @@ To get started with the project:
 
 1. **Clone the Repository:**
     ```sh
-    git clone https://github.com/bendosh4/Demon.git
+    git clone https://github.com/bendosh/Demon.git
     ```
 
 2. **Navigate to the Project Directory:**
     ```sh
-    cd python-project
+    cd Demon
     ```
 
 3. **Install Dependencies:**
