@@ -9,7 +9,7 @@ import subprocess
 import fileEncrypter
 
 def pront_cmd():
-    commends = ['port scanning', 'clear', 'help', 'last', 'time', 'encryption', 'decryption', 'exit', 'read']
+    commends = ['port scanning', 'clear', 'help', 'last', 'time', 'encryption', 'decryption', 'exit', 'read', 'hash decrypter']
     for c in commends:
         print(f"{colors.COLORS['cyan']}{c}{colors.RESET}")
         
@@ -45,6 +45,8 @@ while msg != "exit":
         fileEncrypter.decrypt()
     elif msg == 'read':
         fileEncrypter.read()
+    elif msg == "hash decrypter":
+        fileEncrypter.HashDecypter()
     elif msg == "exit":
         print(f"{colors.COLORS['green']}Goodbye, Demon!{colors.RESET}")
     else:
