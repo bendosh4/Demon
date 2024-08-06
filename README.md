@@ -136,9 +136,9 @@ Once you have the application running, you can use the following commands:
 - `read`: Reads and displays the content of a specified file.
 
 ## Upcoming
-**Hash decryption - decrypt hash for more then 10 types!**
-**binary to hexdecimal - caculator for binary to hexdecimal.**
-**upgrading file encryption - file encryption system will take a step up!.**
+- **Hash decryption - decrypt hash for more then 10 types!**<br>
+- **binary to hexdecimal - caculator for binary to hexdecimal.**<br>
+- **upgrading file encryption - file encryption system will take a step up!.**<br>
 
 ## Contributing
 
