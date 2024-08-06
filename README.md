@@ -1,4 +1,4 @@
-# Demon
+# Demon v1.1
 ## Documentation
 **Make sure to check the documentation for more info [documentation](https://bendosh4.github.io/Demon-Website/)**
 ## Description
@@ -134,6 +134,11 @@ Once you have the application running, you can use the following commands:
 - `decryption`: Decrypts data using the previously generated key.
 - `exit`: Exits the application.
 - `read`: Reads and displays the content of a specified file.
+
+## Upcoming
+Hash decryption - decrypt hash for more then 10 types! 
+binary to hexdecimal - caculator for binary to hexdecimal
+upgrading file encryption - file encryption system will take a step up!
 
 ## Contributing
 
