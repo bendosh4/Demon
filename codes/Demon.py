@@ -15,6 +15,7 @@ def pront_cmd():
         
         
 logo.print_logo()
+extra.unzip_start_file()
 print(f"{colors.COLORS['green']}Welcome to the Demon!{colors.RESET}")
 print(f"{colors.COLORS['blue']}Type 'exit' to quit the program\nhelp for commends{colors.RESET}")
 msg = ''
@@ -25,8 +26,8 @@ while msg != "exit":
     if msg == "last":
         print(f"{colors.COLORS['yellow']}Last 5 typed commands:{colors.RESET}")
         for i, c in enumerate(extra.last_typed_commend[:-1], start=1):
-            print(f"{i}. {c}")
-        
+            print(f"{i}. {c}")   
+            
     elif msg == "clear":
         subprocess.call('clear', shell=True)
         logo.print_logo()
