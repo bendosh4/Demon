@@ -3,6 +3,7 @@
 # Libraries
 
 keyboard
+pyperclip
 
 # Custom Modules (these are files you created, so they don't need to be listed in requirements.txt)
 # colors

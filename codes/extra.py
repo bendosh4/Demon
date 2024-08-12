@@ -1,6 +1,7 @@
 import zipfile
 import colors
 import os
+import pyperclip as pc
 
 last_typed_commend = []
 
@@ -24,3 +25,9 @@ def unzip_start_file():
             zip_ref.extractall("wordlist_ziped")  # Extracts all files into the specified directory
         
         print(f"{colors.COLORS['green']}File unzipped successfully.{colors.RESET}")
+        
+
+def copy_commend(commend):
+    
+    pc.copy(commend)
+    print(f"{colors.COLORS['green']}Command copied to clipboard: {commend}{colors.RESET}")

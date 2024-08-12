@@ -7,9 +7,10 @@ import extra
 import threading  
 import subprocess
 import fileEncrypter
+import unit_handle
 
 def pront_cmd():
-    commends = ['port scanning', 'clear', 'help', 'last', 'time', 'encryption', 'decryption', 'exit', 'read', 'hash decrypter']
+    commends = ['port scanning', 'clear', 'help', 'last', 'time', 'encryption', 'decryption', 'exit', 'read', 'hash decrypter', 'unit converter']
     for c in commends:
         print(f"{colors.COLORS['cyan']}{c}{colors.RESET}")
         
@@ -22,12 +23,16 @@ msg = ''
 
 while msg != "exit":
     msg = input(f"{colors.COLORS['yellow']}> {colors.RESET}")
-    extra.last_typed_commend.append(msg)
+    if not msg == 'last':
+        extra.last_typed_commend.append(msg)
     if msg == "last":
         print(f"{colors.COLORS['yellow']}Last 5 typed commands:{colors.RESET}")
         for i, c in enumerate(extra.last_typed_commend[:-1], start=1):
             print(f"{i}. {c}")   
-            
+        try:
+            extra.copy_commend(extra.last_typed_commend[-1])
+        except Exception:
+            print(f"{colors.COLORS['red']}No commends has been typed yet.{colors.RESET}")
     elif msg == "clear":
         subprocess.call('clear', shell=True)
         logo.print_logo()
@@ -48,6 +53,8 @@ while msg != "exit":
         fileEncrypter.read()
     elif msg == "hash decrypter":
         fileEncrypter.HashDecypter()
+    elif msg == "unit converter":
+        unit_handle.unit_conversion()
     elif msg == "exit":
         print(f"{colors.COLORS['green']}Goodbye, Demon!{colors.RESET}")
     else:
